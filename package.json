@@ -1,0 +1,40 @@
+{
+  "name": "chlgrlc-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.1.1",
+    "@material-ui/icons": "^4.2.0",
+    "@material-ui/styles": "^4.1.1",
+    "js-cookie": "^2.2.0",
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "5.0.0",
+    "react-scripts": "3.0.1",
+    "react-select": "^2.4.4",
+    "recharts": "^1.6.2",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.3",
+    "prop-types": "latest"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "redux-logger": "^3.0.6"
+  }
+}
