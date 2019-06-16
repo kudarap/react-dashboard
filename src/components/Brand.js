@@ -25,7 +25,7 @@ function Brand(props) {
       color="textSecondary"
       className={classes.text}>
       <img src={logo} alt="logo" className={classes.logo} />
-      chlgrlc Dashboard
+      Chiligarlic Dashboard
     </Typography>
   )
 }

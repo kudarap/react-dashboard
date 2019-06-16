@@ -1,5 +1,5 @@
-# chlgrlc Dashboard
-chlgrlc web backend.
+# Chiligarlic Dashboard
+Chiligarlic web backend.
 
 ## Features
 - [ ] login

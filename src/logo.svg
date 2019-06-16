@@ -3,7 +3,7 @@
 <svg width="220" height="220"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
-<g style="fill:rgb(240,245,244)">
+<g style="fill:rgba(0,0,0,0)">
 <rect x="0" y="0" width="20" height="20" />
 <rect x="20" y="0" width="20" height="20" />
 <rect x="40" y="0" width="20" height="20" />

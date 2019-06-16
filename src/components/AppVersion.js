@@ -16,14 +16,14 @@ function VersionForm() {
   const classes = useStyles()
   return <>
     <div className={classes.body}>
-      <Typography variant="h6" color="secondary">chlgrlc Dashboard</Typography>
+      <Typography variant="h6" color="secondary">Chiligarlic Dashboard</Typography>
       <Typography variant="caption">
         Version {packagejson.version}
         <br />
         Made by ninjas @ <Link color="secondary" href="http://chiligarlic.com" target="_blank">chiligarlic</Link>.
         <br />
         <br />
-        chlgrlc Dashboard is made possible by <Zelda to="/credits">open source software</Zelda>.
+        Chiligarlic Dashboard is made possible by <Zelda to="/credits">open source software</Zelda>.
       </Typography>
     </div>
   </>

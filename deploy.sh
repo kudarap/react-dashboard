@@ -1,46 +1,42 @@
 #!/bin/bash
 
-ENV=$1
-BUILD="build"
+env=$1
+build_path='build'
+url=root@chiligarlic.com
+deploy_path='/root/dev/dashboard'
 
 out() {
   echo "[deploy] $1"
 }
 
 upload() {
-  if [ $ENV == 'live' ]; then
-    out "uploading on firebase hosting"
-    firebase deploy
+  if [ $env == 'prod' ]; then
+    out "uploading on production server"
+    out "NOT IMPLEMENTED!"
     return
   fi
 
   # development server
   out "uploading on dev server"
-  npm run build
-  scp -r build root@162.243.138.32:~/ratatxt/c_new
-  ssh root@162.243.138.32 \
-    "cd ~/ratatxt &&\
-    mv console tmp &&\
-    mv c_new console &&\
-    rm -r tmp"
+  scp -r $build_path $url:$deploy_path.tmp
+  # shellcheck disable=SC2029
+  ssh $url "rm -rf ${deploy_path} && mv ${deploy_path}.tmp ${deploy_path}"
 }
 
 main() {
-  if [[ -z $ENV ]]; then
-    ENV='dev'
+  if [[ -z $env ]]; then
+    env='dev'
   fi
 
-  if [ $ENV != 'dev' ] && [ $ENV != 'live' ]; then
-    out "invalid '$ENV' ENV!"
+  if [ $env != 'dev' ] && [ $env != 'prod' ]; then
+    out "invalid '$env' env!"
     out "stopped!"
     exit
   fi
 
-  out "deploying on $ENV..."
-  out "building..."
-  # npm run build
-  out "uploading..."
-  upload
+  out "deploying on $env..."
+  out "building..."; ./build.sh .env.$env
+  out "uploading..."; upload
 
   out "done!"
 }

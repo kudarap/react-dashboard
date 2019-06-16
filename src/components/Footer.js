@@ -37,10 +37,10 @@ function Footer() {
   return <footer className={classes.footer}>
     <Container maxWidth="sm">
       <SpacedGroup>
-        <FootText color="textSecondary">&copy; 2O19 chlgrlc.com</FootText>
+        <FootText color="textSecondary">&copy; 2O19 Chiligarlic.com</FootText>
         <FootLink to="/">Dashboard</FootLink>
         <FootText>
-          <Zelda href="http://chlgrlc.com" underline="none">
+          <Zelda href="http://chiligarlic.com" underline="none">
             Website
           </Zelda>
         </FootText>

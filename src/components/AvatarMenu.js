@@ -6,19 +6,13 @@ import { makeStyles } from '@material-ui/core/styles'
 import IconButton from '@material-ui/core/IconButton'
 import Menu from '@material-ui/core/Menu'
 import MenuItem from '@material-ui/core/MenuItem'
-import UserIcon from '@material-ui/icons/Face'
+import UserIcon from '@material-ui/icons/AccountCircle'
 
 import { appLogout } from '../services/app'
 
 const useStyles = makeStyles(theme => ({
-  avatar: {
-    width: 34,
-    height: 34,
-    marginLeft: 10,
-    cursor: 'pointer',
-  },
   menu: {
-    marginTop: theme.spacing(4),
+    // marginTop: theme.spacing(4),
   }
 }))
 
@@ -41,13 +35,12 @@ function AvatarMenu({ name }) {
         aria-owns={anchorEl ? 'avatar-menu' : undefined}
         aria-haspopup="true"
         color="inherit"
-        onClick={handleClick}
-        className={classes.avatar}>
+        onClick={handleClick}>
         <UserIcon />
       </IconButton>
 
       <Menu
-        id="simple-menu"
+        id="avatar-menu"
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
         onClose={handleClose}

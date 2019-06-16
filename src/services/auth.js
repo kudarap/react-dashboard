@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie'
 
-const AUTH_KEY = 'chlgrlc-dashboard'
+const AUTH_KEY = 'chiligarlic-dashboard'
 
 export const isOk = () => {
   return (get() || {}).hasOwnProperty('id')

@@ -12,3 +12,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #cdcdcd;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ababab;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #666;
+}

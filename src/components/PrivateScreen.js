@@ -54,7 +54,8 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     paddingTop: theme.mixins.toolbar[denseToolbarHeight].minHeight,
     height: '100vh',
-    overflow: 'auto',
+    overflowY: 'scroll',
+    scrollbarWidth: 'thin',
   },
 }))
 

@@ -3,8 +3,7 @@ import querystring from 'querystring'
 
 import { getAccessToken } from './auth'
 
-// const API_ROOT = 'http://localhost:8000'
-export const API_ROOT = 'https://api.dev.chlgrlc.com'
+export const API_ROOT = process.env.REACT_APP_API_HOST
 
 export const GET = 'GET'
 export const POST = 'POST'

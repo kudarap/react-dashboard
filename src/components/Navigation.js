@@ -28,7 +28,7 @@ import EventLogIcon from '@material-ui/icons/EventNote'
 
 import logo from '../logo.svg'
 
-const appName = 'chlgrlc'
+const appName = 'Chiligarlic'
 
 function NavItem({ label, to, icon }) {
   return (

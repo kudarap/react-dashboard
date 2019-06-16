@@ -30,7 +30,7 @@ function VersionForm({ data, loading }) {
   return <>
     <LinearProgress style={{ visibility: loading ? 'visible' : 'hidden' }} />
     <div className={classes.body}>
-      <Typography variant="h6" color="primary">chlgrlc Dashboard</Typography>
+      <Typography variant="h6" color="primary">Chiligarlic Dashboard</Typography>
       <FormData data={data} />
     </div>
   </>
